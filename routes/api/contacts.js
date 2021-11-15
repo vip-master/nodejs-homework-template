@@ -48,7 +48,7 @@ router.delete('/:contactId', async (req, res, next) => {
   } else res.status(404).json({ message: 'Not found' });
 });
 
-router.patch('/:contactId', async (req, res, next) => {
+router.put('/:contactId', async (req, res, next) => {
   const { name, email, phone } = req.body;
   const { contactId } = req.params;
 
